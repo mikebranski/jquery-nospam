@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<title>No Spam - a jQuery plugin by Mike Branski</title>
+		<script type="text/javascript" src="jquery-1.2.3.min.js"></script>
+		<script type="text/javascript" src="jquery.nospam.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('a.email').nospam();
+				$('a.email_replace_low').nospam({ replaceText: true, filterLevel: 'low' });
+				$('a.email_low').nospam({ filterLevel: 'low' });
+				$('span.email').nospam({ filterLevel:'low' });
+			});
+		</script>
+	</head>
+	
+	<body>
+		<h1>No Spam v1.3</h1>
+		<h2>by Mike Branski</h2>
+		<p>This jQuery plugin turns an obfuscated e-mail address into a human-readable one. To use this plugin, include <a href="jquery.nospam.js">jquery.nospam.js</a> and call the nospam() method. No Spam automatically detects if your matched element is a link. If so, it checks the rel attributes for the obfuscated e-mail addresses. For all other elements, it uses the text between the matched tags. <em>Now supports multiple dots (.) both before and after the at (@) sign!</em></p>
+        <pre>&lt;script type="text/javascript"&gt;
+  $(document).ready(function(){
+    $('a.email').nospam({
+      replaceText: true,    // BOOLEAN, optional default false. If set to true, replaces matched elements' text with the e-mail address
+      filterLevel: 'normal' // STRING, optional accepts 'low' or 'normal', default 'normal'.
+                            // low: email/domain/tld
+                            // normal: dlt/niamod/liame (email/domain/tld reversed)
+    });
+  });
+&lt;/script&gt;</pre>
+
+        <h3>Integration</h3>
+        <p>To make things easier, I also created a PHP function called nospam() that formats your regular e-mail addresses dynamically and outputs them in a No Spam-ready format which I've made <a href="php-integration.php">available for download</a>.</p>
+		
+		<h3>Default, no options</h3>
+		<pre>$('a.email').nospam();</pre>
+
+		This: <pre>&lt;a href="/contactform.php?contactID=1164" rel="moc/liamg//iksnarbekim" class="email"&gt;Mike Branski&lt;/a&gt;</pre>
+		Becomes: <a href="/contactform.php?contactID=1164" rel="moc/liamg//iksnarbekim" class="email">Mike Branski</a><br />
+		
+		<h3>Replace Text, Filter Level low</h3>
+		<pre>$('a.email_replace_low').nospam({
+  replaceText: true,
+  filterLevel: 'low'
+});</pre>
+
+		This: <pre>&lt;a href="/contactform.php?contactID=1164" rel="mikebranski//gmail/com" class="email_replace_low"&gt;Mike Branski&lt;/a&gt;</pre>
+		Becomes: <a href="/contactform.php?contactID=1164" rel="mikebranski//gmail/com" class="email_replace_low">Mike Branski</a><br />
+		
+		<h3>Non link, Filter Level low</h3>
+		<pre>$('span.email').nospam({
+  filterLevel:'low'
+});</pre>
+		This: <pre>&lt;span class="email"&gt;mikebranski//gmail/com&lt;/span&gt;</pre>
+		Becomes: <span class="email">mikebranski//gmail/com</span><br />
+
+		<h3>Multiple dots (.), Filter Level low</h3>
+		<pre>$('a.email').nospam({
+  filterLevel:'low'
+});</pre>
+		This: <pre>&lt;span class="email"&gt;mike/branski//gmail/co/uk&lt;/span&gt;</pre>
+		Becomes: <span class="email">mike/branski//gmail/co/uk</span><br />
+
+        <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+            var pageTracker = _gat._getTracker("UA-1790385-1");
+            pageTracker._initData();
+            pageTracker._trackPageview();
+        </script>
+
+	</body>
+</html>
