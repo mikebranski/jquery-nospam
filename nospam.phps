@@ -1,13 +1,13 @@
 <?php
 	/* 
-	 * PHP integration for No Spam v1.3.1
-	 * by Mike Branski (https://github.com/mikebranski)
-	 * mikebranski@gmail.com
+	 * PHP integration for jQuery NoSpam
+	 * by Mike Branski <mikebranski@gmail.com>
+	 * https://github.com/mikebranski/jquery-nospam
 	 *
 	 * Copyright (c) 2008-2011 Mike Branski (https://github.com/mikebranski)
 	 *
-	 * NOTE: This script is for integrating your dynamic PHP content with No Spam.
-	 *       Download No Spam at http://github.com/mikebranski/jquery-nospam
+	 * NOTE: This script is for integrating your dynamic PHP content with NoSpam.
+	 *       Download NoSpam at https://github.com/mikebranski/jquery-nospam
 	 *
 	 */
 	function nospam($email, $filterLevel = 'normal')

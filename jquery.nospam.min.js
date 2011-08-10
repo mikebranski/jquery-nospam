@@ -1,7 +1,7 @@
 /* 
  * No Spam (1.3.1)
- * by Mike Branski (https://github.com/mikebranski)
- * mikebranski@gmail.com
+ * by Mike Branski <mikebranski@gmail.com>
+ * https://github.com/mikebranski/jquery-nospam
  *
  * Copyright (c) 2008-2011 Mike Branski (https://github.com/mikebranski)
  * Licensed under GPL version 3 (http://www.gnu.org/copyleft/gpl.html)
