@@ -1,5 +1,5 @@
 /* 
- * No Spam (1.3.1)
+ * No Spam (1.3.2)
  * by Mike Branski <mikebranski@gmail.com>
  * https://github.com/mikebranski/jquery-nospam
  *
