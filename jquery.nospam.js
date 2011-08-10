@@ -19,7 +19,6 @@
  * v 1.0   - Initial release
  *
  */
-
 jQuery.fn.nospam = function(settings) {
 	settings = jQuery.extend({
 		replaceText: false, 	// optional, accepts true or false
