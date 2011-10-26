@@ -1,4 +1,4 @@
-# jQuery No Spam Plugin
+# jQuery No Spam Plugin ![Project status](http://stillmaintained.com/mikebranski/jquery-nospam.png)
 
 This jQuery plugin turns an obfuscated e-mail address into a human-readable one. To use this plugin, include `jquery.nospam.js` and call the nospam() method. No Spam automatically detects if your matched element is a link. If so, it checks the rel attributes for the obfuscated e-mail addresses. For all other elements, it uses the text between the matched tags.
 
