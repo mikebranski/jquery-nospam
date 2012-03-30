@@ -12,15 +12,12 @@
 	 */
 	function nospam($email, $filterLevel = 'normal')
 	{
-		$email = strrev($email);
-		$email = preg_replace('[@]', '//', $email);
-		$email = preg_replace('[\.]', '/', $email);
-
-		if($filterLevel == 'low')
+		if($filterLevel != 'low')
 		{
 			$email = strrev($email);
 		}
-
+		$email = preg_replace('[@]', '//', $email);
+		$email = preg_replace('[\.]', '/', $email);
 		return $email;
 	}
 ?>
