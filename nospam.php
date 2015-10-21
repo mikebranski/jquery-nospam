@@ -9,7 +9,6 @@
 	 *
 	 * NOTE: This script is for integrating your dynamic PHP content with No Spam.
 	 *       Download No Spam at https://github.com/mikebranski/jquery-nospam
-	 *
 	 */
 	function nospam($email, $filterLevel = 'normal')
 	{

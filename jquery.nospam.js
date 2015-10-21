@@ -9,7 +9,6 @@
  * NOTE: This script requires jQuery to work.  Download jQuery at jquery.com
  *
  * Thanks to Bill on the jQuery mailing list for the double slash idea!
- *
  */
 (function($){
 	$.fn.nospam = function(settings) {
