@@ -4,7 +4,7 @@
  * https://github.com/mikebranski/jquery-nospam
  *
  * Copyright (c) 2008-2011 Mike Branski (https://github.com/mikebranski)
- * Licensed under GPL version 3 (http://www.gnu.org/copyleft/gpl.html)
+ * Licensed under LGPL version 3 (http://www.gnu.org/licenses/lgpl-3.0.txt)
  *
  * NOTE: This script requires jQuery to work.  Download jQuery at jquery.com
  *
