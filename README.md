@@ -88,6 +88,7 @@ foo//example/com
 To make things easier, I also created a PHP function called nospam() that formats your regular e-mail addresses dynamically and outputs them in a No Spam-ready format which I've made [available for download](https://github.com/mikebranski/jquery-nospam/blob/master/nospam.php).
 
 ## Changelog
+* 1.4.0 - Changed license to LGPLv3
 * 1.3.2 - Wrap plugin in a closure for better compatibility with other libraries, clean up comments and examples, create README
 * 1.3.1 - Updated links in comments, removed GPL license file, tested against jQuery 1.6.2
 * 1.3   - Added support for e-mail addresses with multiple dots (.) both before and after the at (@) sign
