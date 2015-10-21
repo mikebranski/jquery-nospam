@@ -1,9 +1,9 @@
-/* 
+/*
  * No Spam (1.3.2)
  * by Mike Branski <mikebranski@gmail.com>
  * https://github.com/mikebranski/jquery-nospam
  *
- * Copyright (c) 2008-2011 Mike Branski (https://github.com/mikebranski)
+ * Copyright (c) 2008-2015 Mike Branski (https://github.com/mikebranski)
  * Licensed under LGPL version 3 (http://www.gnu.org/licenses/lgpl-3.0.txt)
  *
  * NOTE: This script requires jQuery to work.  Download jQuery at jquery.com
@@ -17,7 +17,7 @@
 			replaceText: false, 	// optional, accepts true or false
 			filterLevel: 'normal' 	// optional, accepts 'low' or 'normal'
 		}, settings);
-		
+
 		return this.each(function(){
 			e = null;
 			if(settings.filterLevel == 'low') { // Can be a switch() if more levels added
